@@ -1,7 +1,7 @@
-<h1 align="center">Hi, I'm Dwi Yuda 👋</h1>
+<h1 align="center">Hi, I'm Dwi Yuda</h1>
 
 <p align="center">
-  AI Engineer — deep learning in PyTorch, model evaluation and interpretability, and shipping vision models behind real APIs.
+  AI Engineer deep learning in PyTorch, model evaluation and interpretability, and shipping vision models behind real APIs.
 </p>
 
 <p align="center">
