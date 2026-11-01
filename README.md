@@ -9,7 +9,7 @@
   <a href="https://dwiyuda.is-a.dev">
     <img src="https://img.shields.io/badge/Portfolio-111111?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio"/>
   </a>
-  <a href="https://www.linkedin.com/in/dwi-yuda">
+  <a href="https://www.linkedin.com/in/dwiyuda">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:dwiiyudaaa@gmail.com">
@@ -117,5 +117,5 @@ routes to a human reviewer.
 Open to AI Engineer, Data, and Backend roles, applied ML collaboration, and academic work.
 
 - 🌐 [dwiyuda.is-a.dev](https://dwiyuda.is-a.dev)
-- 💼 [LinkedIn](https://www.linkedin.com/in/dwi-yuda)
+- 💼 [LinkedIn](https://www.linkedin.com/in/dwiyuda)
 - 📧 dwiiyudaaa@gmail.com
