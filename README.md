@@ -1,69 +1,83 @@
-<h1 align="center">Hi, I'm Dwi Yuda</h1>
+<h1 align="center">Hi, I'm Dwi Yuda 👋</h1>
 
 <p align="center">
-  AI Engineer deep learning in PyTorch, model evaluation and interpretability, and shipping vision models behind real APIs.
+  <b>AI / ML Engineer</b> — deep learning in PyTorch, model evaluation & interpretability,<br/>
+  and shipping vision + LLM systems behind real APIs.
 </p>
 
 <p align="center">
+  <a href="https://dwiyuda.is-a.dev">
+    <img src="https://img.shields.io/badge/Portfolio-111111?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+  </a>
   <a href="https://www.linkedin.com/in/dwiyuda">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:dwiiyudaaa@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <!-- Aktifkan baris di bawah kalau portfolio sudah live:
-  <a href="https://DOMAIN-PORTOFOLIO-ANDA">
-    <img src="https://img.shields.io/badge/Portfolio-111111?style=flat&logo=vercel&logoColor=white" alt="Portfolio"/>
-  </a>
-  -->
 </p>
 
 ---
 
 ## About
 
-Informatics Engineering at **Universitas Islam Riau** (Pekanbaru, Indonesia), graduating late 2026. I build deep learning systems that survive contact with real data — the kind where an evaluation audit matters more than a leaderboard number.
+Informatics Engineering at **Universitas Islam Riau** (Pekanbaru, Indonesia), graduating late 2026.
+I build deep learning systems that survive contact with real data — the kind where an evaluation
+audit matters more than a leaderboard number.
 
-- 🔬 **Working on:** computer vision pipelines, LLM-based tooling, model evaluation & interpretability
-- 🛠️ **Stack I reach for:** PyTorch, Hugging Face, FastAPI, Next.js, OpenCV
+- 🔬 **Working on:** computer vision pipelines, LLM / RAG tooling, model evaluation & interpretability
+- 🛠️ **Stack I reach for:** PyTorch, Hugging Face, FastAPI, Go, Next.js, OpenCV
 - 🎓 **Teaching Assistant** at UIR Informatics — ran lab sections for ~300 students across Statistics, Databases, and Web Programming
 - 💬 Indonesian (native) · English (professional) · Arabic (conversational)
-- 📫 Open to **AI Engineer** roles and research collaboration
+- 📫 Open to **AI Engineer**, **Data**, and **Backend** roles, and research collaboration
 
 ---
 
 ## Featured Projects
 
-### 🪪 [Automatic Student ID Card Forgery Detection](https://github.com/Dwiyuda/KTM-Detector-UIR-Skripsi_Public)
-Four-stage pipeline for detecting forged student ID cards. Qwen3-VL gates out non-card photos, Florence-2 with Canny crops and straightens the card, EfficientNet-B0 classifies genuine vs. forged, and Grad-CAM explains the decision.
-
+### 🪪 [Student ID Card Forgery Detection](https://github.com/Dwiyuda/KTM-Detector-UIR-Skripsi_Public) · *final thesis*
+Four-stage pipeline that detects forged student ID cards. Qwen3-VL gates out non-card photos,
+Florence-2 + Canny crops and straightens the card, EfficientNet-B0 classifies genuine vs. forged,
+and Grad-CAM explains the decision.
 - **97.7% accuracy, ROC-AUC 0.9912** on 1,645 images across five forgery scenarios
 - Rebuilt the train/test split to be group-aware after an audit exposed a **29% card-level leak** — the honest number, not the flattering one
-- Runs on 4 GB VRAM; served through FastAPI with a Next.js 14 frontend
+- Runs on 4 GB VRAM; served through FastAPI with a Next.js frontend
 
 `PyTorch` `FastAPI` `Next.js` `OpenCV` `Grad-CAM`
 
-### 📝 LLM-Based Automated Practicum Grading System
-Python system that grades practicum submissions via the Gemini API, reading the question, answer key, and rubric to score each student and export an Excel recap with per-student feedback. Covers eight sessions including a quiz and final exam.
+### ⚖️ [Islamic Family Law Assistant](https://github.com/Dwiyuda/islamic-family-law-assistant)
+RAG assistant for Indonesian Islamic family law (divorce & inheritance): hybrid retrieval +
+reranking, refusal gating so it declines what it cannot ground, and a **deterministic faraid
+engine** for the arithmetic an LLM should never guess.
 
-- Skipped RAG deliberately — the full context fits in a single prompt
-- Every output carries a confidence label; anything below high confidence routes to a human reviewer
-- Instructor validates AI-drafted answer keys before use; submitted code is read, never executed
-- Approved by the head of department
+`Python` `RAG` `Hybrid Retrieval` `Reranking` `LLM`
+
+### 🏘️ [Village Aid Priority — K-Means + AHP-TOPSIS](https://github.com/Dwiyuda/village-aid-priority-kmeans-ahp-topsis)
+Decision support system that ranks **371 villages** for social-assistance targeting: K-Means
+clustering plus AHP-TOPSIS multi-criteria ranking, a Flask app with live consistency checking,
+and an [interactive dashboard](https://datastudio.google.com/reporting/caaa607a-7a94-49e2-bc3f-3698f9c8e82a).
+
+`Python` `scikit-learn` `AHP-TOPSIS` `Flask` `Looker Studio`
+
+### 📝 [LLM Practicum Grader](https://github.com/Dwiyuda/llm-practicum-grader)
+Grades lab submissions via the Gemini API against a human-approved answer key and rubric, then
+exports an Excel recap. Every output carries a confidence label; anything below high confidence
+routes to a human reviewer.
 
 `Python` `Gemini API` `Prompt Engineering` `Human-in-the-loop`
 
 ---
 
-## What I Focus On
+## More Projects
 
-| Area | What that means in practice |
-|------|------------------------------|
-| **Applied Deep Learning** | Transfer learning, vision pipelines, training under tight VRAM budgets |
-| **Model Evaluation** | ROC-AUC, confusion matrices, group-aware splitting, leakage audits |
-| **Interpretability** | Grad-CAM and explaining *why* a model decided what it decided |
-| **LLM Systems** | Prompt engineering, structured outputs, confidence gating, human-in-the-loop design |
-| **Model Serving** | FastAPI backends, Next.js frontends, making the model usable by non-engineers |
+| Project | What it is |
+|---|---|
+| [practicum-score-graphql](https://github.com/Dwiyuda/practicum-score-graphql) | GraphQL API in **Go** (gqlgen) with PostgreSQL, migrations, tests & CI |
+| [housing-aid-priority-xgboost](https://github.com/Dwiyuda/housing-aid-priority-xgboost) | Housing-renovation aid prioritisation: eligibility gate + XGBoost urgency score, Streamlit app |
+| [eggplant-leaf-disease-detection-yolov11](https://github.com/Dwiyuda/eggplant-leaf-disease-detection-yolov11) | Eggplant leaf disease detection with YOLOv11 + box-level label audit |
+| [shallot-disease-lvlm-zero-shot](https://github.com/Dwiyuda/shallot-disease-lvlm-zero-shot) | Zero-shot shallot disease ID: prompt engineering across 4 vision-language models |
+| [plant-disease-cnn-graph-rag](https://github.com/Dwiyuda/plant-disease-cnn-graph-rag) | ResNet-50 classifier + Graph RAG explanations (Neo4j + LLM), evaluated with RAGAS |
+| [WEB_PORTOFOLIO](https://github.com/Dwiyuda/WEB_PORTOFOLIO) | Source for my portfolio site — Astro, static, zero JS bundle |
 
 ---
 
@@ -72,6 +86,7 @@ Python system that grades practicum submissions via the Gemini API, reading the 
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
@@ -92,23 +107,15 @@ Python system that grades practicum submissions via the Gemini API, reading the 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Dwiyuda&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dwiyuda&layout=compact&hide_border=true&theme=tokyonight&langs_count=6" alt="Top languages"/>
-</p>
 
 ---
 
 ## Let's Connect
 
-Open to AI Engineer roles, applied ML collaboration, and academic work.
+Open to AI Engineer, Data, and Backend roles, applied ML collaboration, and academic work.
 
+- 🌐 [dwiyuda.is-a.dev](https://dwiyuda.is-a.dev)
 - 💼 [LinkedIn](https://www.linkedin.com/in/dwiyuda)
 - 📧 dwiiyudaaa@gmail.com
